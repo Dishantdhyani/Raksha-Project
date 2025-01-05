@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="infostyle.css">
+  <script defer src="infoindex1.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Raksha: Empowering Safety, Anytime, Anywhere.</h1>
+    <nav>
+      <ul>
+        <li><a href=".\..\info page 2\index2.html">About Us</a></li>
+        <li><a href=".\..\info page 1\nextpage.html">Precaution</a></li>
+        <li><a href=".\..\self defence\hello.html">Self Defence</a></li>
+        <li><a href="#">profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <div class="sos-container">
+        <div class="sos-button" onclick="playSosSound()">SOS</div>
+
+        <div class="callPolice" onclick="callPoliceAction()">
+          <img src="image/52-512.png" alt="Call Police">
+        </div>
+        <div class="emergencyNum" onclick="EmergencyNumber()">
+            <img src="image/imgbin-emergency-telephone-number-telephone-call-9-1-1-others-vXKkXMN3ABsphdrGUE8MH17zX.jpg" alt="Emergency Number">
+        </div>
+        <div class="policeStation" onclick="PoliceStat()">
+          <img src="image/9587694.png" alt="Police Station">
+        </div>
+        <div class="FamilyMsg" onclick="FamilyMessage()">
+          <img src="image/wooden-message-button-wooden-icon-png.png" alt="Message Family">
+        </div>
+        <audio id="sosSound" src="sound/sos-signal-137144.mp3"></audio>
+    </div>
+  </div>
+
+  <!-- footer section
+   -->
+  <footer>
+    <style>
+      footer {
+        background: #222; /* Dark background for contrast */
+        color: white;
+        padding: 30px 20px;
+        font-family: Arial, sans-serif;
+      }
+  
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .footer-logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #ff6699;
+        margin-bottom: 10px;
+      }
+  
+      .footer-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 500px;
+        line-height: 1.6;
+      }
+  
+      .footer-links {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+  
+      .footer-links a {
+        color: #ff6699;
+        text-decoration: none;
+        font-size: 14px;
+      }
+  
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+  
+      .social-media {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+  
+      .social-media a img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s;
+      }
+  
+      .social-media a:hover img {
+        transform: scale(1.2);
+      }
+  
+      .footer-bottom {
+        font-size: 12px;
+        color: #999;
+      }
+    </style>
+  
+    <div class="footer-container">
+      <!-- Logo or Title -->
+      <div class="footer-logo">Raksha</div>
+  
+      <!-- Description -->
+      <p class="footer-description">
+        Raksha is committed to empowering safety and security for everyone, anywhere, anytime. Stay safe with our reliable tools and resources.
+      </p>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="www.facebook.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
+      </a>
+      <a href="www.twitter.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter-squared.png" alt="Twitter">
+      </a>
+      <a href="www.instagram.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="www.linkedin.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+      </a>
+      
+      </div>
+  
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        © 2025 Raksha | All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
