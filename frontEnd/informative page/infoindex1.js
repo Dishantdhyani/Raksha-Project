@@ -1,27 +1,27 @@
 function playSosSound() {
-    const sosSound = document.getElementById("sosSound");
-    sosSound.play();
-  }
+  const sosSound = document.getElementById("sosSound");
+  sosSound.play();
+}
 
 
-  function callPoliceAction() {
-    alert("Calling police...");
-    // Add any additional logic for the "Call Police" action here
-  }
+function callPoliceAction() {
+  alert("Calling police...");
+  // Add any additional logic for the "Call Police" action here
+}
 
-  function EmergencyNumber(){
-    alert("list of emergency numbers are ...")
-  }
+function EmergencyNumber() {
+  alert("list of emergency numbers are ...")
+}
 
-  function PoliceStat(){
-    alert("all police station details are here");
-  }
+function PoliceStat() {
+  alert("all police station details are here");
+}
 
-  function FamilyMessage(){
-    prompt("message your family member from here");
-  }
+function FamilyMessage() {
+  prompt("message your family member from here");
+}
 
-  // Create the navbar container
+// Create the navbar container
 const navbar = document.createElement("div");
 navbar.className = "navbar";
 
@@ -43,3 +43,10 @@ links.forEach((linkData) => {
 
 // Append the navbar to the body
 document.body.appendChild(navbar);
+
+
+const email = localStorage.getItem('userEmail');
+const firstName = localStorage.getItem('userName');
+if (firstName) {
+  document.getElementById('userProfile').textContent = firstName;
+}

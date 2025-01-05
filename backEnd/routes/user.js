@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { v1 as uuidv1 } from 'uuid';
-import { createUser } from './../model/userDetail.js';
+import { createUser, getUser } from './../model/userDetail.js';
 import { validateUser, doesUserExist } from './../model/login.js';
 import { createEmergencyDetail } from './../model/userEmergency.js';
 import {} from './../model/userDetail.js';
@@ -47,9 +47,15 @@ router.post('/validateLogin', (req, res) => {
 
     validateUser(userDetail.email, userDetail.password, db, (result) => {
         if (result) {
-            res.send(true);
+            getUser(userDetail.email, db, (result) => {
+                if (result) {
+                    res.send(result);
+                } else {
+                    res.send(null);
+                }
+            });
         } else {
-            res.send(false);
+            res.send(null);
         }
     });
 });

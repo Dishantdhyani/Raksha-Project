@@ -2,6 +2,8 @@ import express, { json } from 'express';
 import DATABASE from './utilities/createDb.js';
 import TABLES from './utilities/createTables.js';
 import usersRoute from './routes/user.js';
+import cors from 'cors';
+import bodyParser from 'body-parser';
 
 class RAKSHA {
 
@@ -11,7 +13,8 @@ class RAKSHA {
         this.app.use(json())
         this.temp = 0;
 
-        // Use routes
+        this.app.use(cors());
+        this.app.use(bodyParser.json());
         this.app.use('/user', usersRoute);
     }
 
