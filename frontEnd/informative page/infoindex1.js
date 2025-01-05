@@ -3,14 +3,13 @@ function playSosSound() {
   sosSound.play();
 }
 
-
 function callPoliceAction() {
   alert("Calling police...");
   // Add any additional logic for the "Call Police" action here
 }
 
 function EmergencyNumber() {
-  alert("list of emergency numbers are ...")
+  alert("list of emergency numbers are ...");
 }
 
 function PoliceStat() {
@@ -44,9 +43,9 @@ links.forEach((linkData) => {
 // Append the navbar to the body
 document.body.appendChild(navbar);
 
+const email = localStorage.getItem("userEmail");
+const firstName = localStorage.getItem("userName");
 
-const email = localStorage.getItem('userEmail');
-const firstName = localStorage.getItem('userName');
 if (firstName) {
-  document.getElementById('userProfile').textContent = firstName;
+  document.getElementById("userProfile").textContent = firstName;
 }
