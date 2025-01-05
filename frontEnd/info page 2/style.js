@@ -1,6 +1,3 @@
-console.log('Raksha - Self Defence Page Loaded');
-
-// Get elements
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navLinks = document.getElementById('nav-links');
 
