@@ -13,7 +13,44 @@ function EmergencyNumber() {
 }
 
 function PoliceStat() {
-  alert("all police station details are here");
+  // alert("all police station details are here");
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+// Function to handle successful location fetch
+function showPosition(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+
+  // Send location data to a server or external service
+  console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+
+  // Example: Redirecting to a nearby police station search page
+  const nearbyPoliceURL = `https://www.google.com/maps/search/police+station/@${latitude},${longitude},15z`;
+  window.open(nearbyPoliceURL, "_blank");
+}
+
+// Function to handle errors
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred.");
+      break;
+  }
 }
 
 function FamilyMessage() {
