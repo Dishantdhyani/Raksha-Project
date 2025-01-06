@@ -8,10 +8,6 @@ function callPoliceAction() {
   // Add any additional logic for the "Call Police" action here
 }
 
-function EmergencyNumber() {
-  alert("list of emergency numbers are ...");
-}
-
 function PoliceStat() {
   // alert("all police station details are here");
 
