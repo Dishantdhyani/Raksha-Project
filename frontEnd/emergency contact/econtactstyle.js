@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Emergency contact page loaded successfully!");
-    // Additional functionality can be added here.
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Emergency contact page loaded successfully!");
+  // Additional functionality can be added here.
 });
 
 const email = localStorage.getItem("userEmail");

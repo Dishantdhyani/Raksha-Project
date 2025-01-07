@@ -82,3 +82,25 @@ const firstName = localStorage.getItem("userName");
 if (firstName) {
   document.getElementById("userProfile").textContent = firstName;
 }
+
+if (!email) {
+  alert("Please login!!!");
+  window.location.href = "./../sign up/index3.html";
+}
+
+validateLogin();
+
+function validateLogin() {
+  document
+    .getElementById("signOutId")
+    .addEventListener("click", async function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Store email in localStorage before redirecting
+      localStorage.removeItem("userEmail");
+      localStorage.removeItem("userName");
+
+      // Redirect to the next page if login is successful
+      window.location.href = "./../sign up/index3.html";
+    });
+}
