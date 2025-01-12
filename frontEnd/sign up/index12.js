@@ -47,7 +47,7 @@ function login() {
   registerBtn.className = "btn";
 
   // Redirect to the next page
-  window.location.href = "nextPage.html"; // Replace with the actual URL
+  window.location.href = "nextPage.html"; 
 }
 
 // Switch to the registration form
@@ -116,7 +116,7 @@ function validateLogin() {
   document
     .getElementById("signInBtn")
     .addEventListener("click", async function (event) {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault(); 
 
       // Get the values from the input fields
       const email = document.getElementById("username").value;
