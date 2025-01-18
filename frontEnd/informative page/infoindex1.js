@@ -27,7 +27,7 @@ function showPosition(position) {
   console.log("Latitude: " + latitude + ", Longitude: " + longitude);
 
   // Example: Redirecting to a nearby police station search page
-  const nearbyPoliceURL = `https://www.google.com/maps/search/police+station/@${latitude},${longitude},15z`;
+  const nearbyPoliceURL = `https://www.google.com/maps/search/police+station+near+me/@${latitude},${longitude},15z`;
   window.open(nearbyPoliceURL, "_blank");
 }
 
