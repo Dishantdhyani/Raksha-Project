@@ -65,15 +65,15 @@ const links = [
   { text: "Services", href: "#services" },
 ];
 
-// Create links and append to the navbar
+
 links.forEach((linkData) => {
   const link = document.createElement("a");
-  link.href = linkData.href; // Set the href attribute
-  link.textContent = linkData.text; // Set the link text
-  navbar.appendChild(link); // Add the link to the navbar
+  link.href = linkData.href; 
+  link.textContent = linkData.text; 
+  navbar.appendChild(link); 
 });
 
-// Append the navbar to the body
+
 document.body.appendChild(navbar);
 
 const email = localStorage.getItem("userEmail");
@@ -94,13 +94,13 @@ function validateLogin() {
   document
     .getElementById("signOutId")
     .addEventListener("click", async function (event) {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault(); 
 
-      // Store email in localStorage before redirecting
+      // email store in local storage
       localStorage.removeItem("userEmail");
       localStorage.removeItem("userName");
 
-      // Redirect to the next page if login is successful
+      // direct next page pr if login ho jata hai successfully
       window.location.href = "./../sign up/index3.html";
     });
 }
